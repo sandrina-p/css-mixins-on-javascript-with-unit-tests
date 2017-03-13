@@ -1,19 +1,20 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`button default generates with correct styles 1`] = `
+exports[`test button default generates with correct styles 1`] = `
 Object {
   "&:hover, &:focus": Object {
     "background": "tomato",
-    "border-color": "white",
-    "color": "white",
   },
   "background": "teal",
-  "border-color": "white",
   "color": "white",
 }
 `;
 
-exports[`button default generates with correct styles 2`] = `
+exports[`test font-size render with 20px - 1.25rem 1`] = `
+Object {
+  "font-size": "1.25rem",
+}
+`;
+
+exports[`test padding generates with small size 1`] = `
 Object {
   "padding": "0.2rem 0.5rem",
 }

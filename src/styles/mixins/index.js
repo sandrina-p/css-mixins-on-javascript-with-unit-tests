@@ -1,7 +1,7 @@
 // PostCSS is needed to make this work
 const postcss = require('postcss');
 
-const paddingsSizes = {
+const paddingSizes = {
     sm: '0.2rem 0.5rem',
     md: '0.5rem 1rem',
     lg: '1rem 2rem',
@@ -9,24 +9,23 @@ const paddingsSizes = {
 const mixins = {
 
     // The first argument, mixin, is used to connect postCSS-mixins
-    button(mixin, bg, color, bgHover, colorHover) {
-        colorHover = colorHover || color;
-
+    button(mixin, bg, color, bgHover) {
         return {
             background: bg,
             color: color,
-            'border-color': color,
             '&:hover, &:focus': {
                 background: bgHover,
-                color: colorHover,
-                'border-color': colorHover,
             }
         };
     },
-
     padding(mixin, size) {
         return {
-            padding: paddingsSizes[size],
+            padding: paddingSizes[size],
+        }
+    },
+    fontSize(mixin, px) {
+        return {
+            'font-size': (px / 16) + 'rem',
         }
     }
 };

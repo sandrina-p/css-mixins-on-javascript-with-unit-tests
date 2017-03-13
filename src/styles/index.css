@@ -1,10 +1,16 @@
 html {
     font-family: sans-serif;
     box-sizing: border-box;
+
+    & * {
+        box-sizing: inherit;
+    }
 }
 
-html * {
-    box-sizing: inherit;
+
+.description {
+    @mixin fontSize 20;
+    @mixin padding lg;
 }
 
 .button {
@@ -15,10 +21,8 @@ html * {
 
     &--default {
         @mixin button teal , white, tomato;
-        @mixin padding sm;
     }
     &--mono {
         @mixin button white, gray, darkGray, white;
-        @mixin padding md;
     }
 }
