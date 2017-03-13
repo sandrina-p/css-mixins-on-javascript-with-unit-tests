@@ -15,9 +15,10 @@ Built with [Webpack 2](https://webpack.js.org/), [Babel](https://babeljs.io/), [
 ## Install
 
 - `npm install`
-- `npm start`
+- `npm start` -
 - Go to http://localhost:3000/
-- `npm test`
+- `npm test` - run tests with Jest
+- `npm test` - create /build folder
 
 
 Make sure you have NodeJs and Webpack 2 installed globally.
