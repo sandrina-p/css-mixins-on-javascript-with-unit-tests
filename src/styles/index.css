@@ -7,10 +7,15 @@ html {
     }
 }
 
+.greetings {
+    @mixin padding lg;
+    color: tomato;
+}
 
 .description {
-    @mixin fontSize 20;
+    @mixin fontSize 86;
     @mixin padding lg;
+    line-height: 1.5;
 }
 
 .button {
@@ -23,6 +28,6 @@ html {
         @mixin button teal , white, tomato;
     }
     &--mono {
-        @mixin button white, gray, darkGray, white;
+        @mixin button white, gray, black;
     }
 }
