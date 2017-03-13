@@ -1,0 +1,24 @@
+html {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html * {
+    box-sizing: inherit;
+}
+
+.button {
+    border: 1px solid;
+    outline: 0;
+    margin: .5rem;
+    cursor: pointer;
+
+    &--default {
+        @mixin button teal , white, tomato;
+        @mixin padding sm;
+    }
+    &--mono {
+        @mixin button white, gray, darkGray, white;
+        @mixin padding md;
+    }
+}
