@@ -1,5 +1,4 @@
 /node_modules
 /coverage
-/__tests__
 .DS_Store
 /*/**/.DS_Store

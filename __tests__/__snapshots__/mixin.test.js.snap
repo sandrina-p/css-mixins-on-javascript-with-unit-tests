@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button default generates with correct styles 1`] = `
+Object {
+  "&:hover, &:focus": Object {
+    "background": "tomato",
+    "border-color": "white",
+    "color": "white",
+  },
+  "background": "teal",
+  "border-color": "white",
+  "color": "white",
+}
+`;
+
+exports[`button default generates with correct styles 2`] = `
+Object {
+  "padding": "0.2rem 0.5rem",
+}
+`;
