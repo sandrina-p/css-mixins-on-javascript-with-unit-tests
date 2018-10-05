@@ -1,6 +1,3 @@
-// PostCSS is needed to make this work
-const postcss = require('postcss');
-
 const paddingSizes = {
     sm: '0.2rem 0.5rem',
     md: '0.5rem 1rem',
