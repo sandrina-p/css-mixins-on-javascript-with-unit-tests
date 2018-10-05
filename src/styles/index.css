@@ -1,5 +1,6 @@
 html {
     font-family: sans-serif;
+    @mixin fontSize 16;
     box-sizing: border-box;
 
     & * {
@@ -8,21 +9,23 @@ html {
 }
 
 .greetings {
-    @mixin padding lg;
+    @mixin padding md;
     color: tomato;
 }
 
 .description {
-    @mixin fontSize 86;
-    @mixin padding lg;
+    @mixin fontSize 48;
+    @mixin padding sm;
     line-height: 1.5;
 }
 
 .button {
+    @mixin fontSize 16;
     border: 1px solid;
+    border-radius: 3px;
     outline: 0;
-    margin: .5rem;
     cursor: pointer;
+    margin: 1rem;
 
     &--default {
         @mixin button teal , white, tomato;

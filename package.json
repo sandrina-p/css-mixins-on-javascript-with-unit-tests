@@ -47,6 +47,6 @@
     "build": "webpack -p",
     "start": "webpack-dev-server --config webpack.config.js",
     "watch": "webpack --progress -w",
-    "test": "node --harmony_proxies node_modules/jest/bin/jest.js --coverage"
+    "test": "jest --coverage"
   }
 }

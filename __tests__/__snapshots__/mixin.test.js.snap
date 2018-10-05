@@ -5,11 +5,15 @@ Object {
   },
   "background": "teal",
   "color": "white",
+  "padding": "0.5rem",
 }
 `;
 
 exports[`test font-size render with 20px - 1.25rem 1`] = `
 Object {
+  "@media (min-width: 60em)": Object {
+    "font-size": "1.375rem",
+  },
   "font-size": "1.25rem",
 }
 `;
